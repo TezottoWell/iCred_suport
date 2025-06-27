@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icred FGTS - Página Inicial</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 40px; 
+      background: #f9f9f9; 
+      color: #222; 
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    h1 { 
+      color: #1a73e8; 
+      margin-bottom: 40px;
+      font-size: 2.5em;
+    }
+    
+    .subtitle {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 50px;
+    }
+    
+    .options {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .option-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      min-width: 200px;
+    }
+    
+    .option-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    
+    .option-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #1a73e8;
+    }
+    
+    .option-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1a73e8;
+    }
+    
+    .option-description {
+      color: #666;
+      line-height: 1.5;
+    }
+    
+    @media (max-width: 600px) {
+      .options {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .option-card {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Icred FGTS</h1>
+    <p class="subtitle">Escolha onde você gostaria de ir:</p>
+    
+    <div class="options">
+      <a href="suporte.html" class="option-card">
+        <div class="option-icon">📞</div>
+        <div class="option-title">Suporte</div>
+        <div class="option-description">
+          Precisa de ajuda? Entre em contato conosco através do e-mail ou WhatsApp.
+        </div>
+      </a>
+      
+      <a href="politica-privacidade.html" class="option-card">
+        <div class="option-icon">🔒</div>
+        <div class="option-title">Política de Privacidade</div>
+        <div class="option-description">
+          Conheça como protegemos e utilizamos suas informações pessoais.
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 
